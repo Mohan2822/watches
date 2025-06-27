@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- nav-start -->
+    <nav>
+        <h1>HANDTIME</h1>
+        <ul id="menuItem">
+            <li><a class="home" href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">TESTINOMIAL</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </ul>
+        <i  class="fa-solid fa-bars menubar" onclick="toggleMenu()"></i>
+    </nav>
+    <script>
+        const menuItem=document.getElementById("menuItem");
+        menuItem.style.maxHeight = "0px"; 
+
+        function toggleMenu() {
+        if(menuItem.style.maxHeight === "0px"){
+              menuItem.style.maxHeight = "400px";
+        }
+        else{
+          menuItem.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <!-- nav-end -->
+     
+    <!-- carousel-start -->
+     <div class="carousel">
+        <div class="container">
+        <h1 id="typing-text">Styles Watches</h1> <!-- Typing effect applied here -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, totam.  
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.  Doloremque, quis?</p>
+        <div class="btn">
+        <a href="#">About Us</a>
+        <a class="btn-2" href="#">Contact Us</a>
+    </div>
+  </div>
+</div>
+    <!-- carousel-end -->
+
+    <!-- feature-start -->
+     <header>
+    <div class="feature">
+        <div class="row">
+            <div class="col">
+               <img src="images/feature-1.png" alt=""> 
+               <h3>FAST DELIVERY</h3>
+               <p>variations of passages of Lorem Ipsum available</p>
+            </div>
+              <div class="col">
+               <img src="images/feature-2.png" alt=""> 
+               <h3>FREE SHIPING</h3>
+               <p>variations of passages of Lorem Ipsum available</p>
+            </div>
+              <div class="col">
+               <img src="images/feature-3.png" alt=""> 
+               <h3>BEST QUALITY</h3>
+               <p>variations of passages of Lorem Ipsum available</p>
+            </div>
+              <div class="col">
+               <img src="images/feature-4.png" alt=""> 
+               <h3>24x7 Customer support</h3>
+               <p>variations of passages of Lorem Ipsum available</p>
+            </div>
+        </div>
+    </div>                                                                                                          
+    </header>
+    <!-- feature-end -->
+
+    <!-- about-start -->
+    <section>
+  <div class="about">
+    <div class="row">
+      <div class="col">
+      <div id="about-img">
+        <img id="shadow-1" src="images/a-1.jpg" alt="" height="400px" width="350px">
+      </div>
+      <div id="about-img">
+        <img id="shadow-2" src="images/a-2.jpg" alt="" height="400px" width="350px">
+      </div>
+      </div>
+      <div class="readmore">
+        <h1>About Our Shop</h1>
+        <p id="about-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, Lorem ipsum dolor sit amet.
+          <span id="more-text" style="display: none;">
+            Repellendus perferendis, magni officia veniam blanditiis accusantium voluptatem. 
+            Laborum eveniet quasi maiores molestias pariatur, corporis inventore obcaecati.
+          </span>
+        </p>
+        <button class="about-btn">Read More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+     <!-- about-end -->
+
+     <!-- products-start -->
+      <head>
+        <!-- p-1 -->
+        <div class="products">
+               <h1>Top Sale Watches</h1>
+            <div class="row">
+                <div class="col">
+                    <div>
+                    <img src="images/w1.png" alt="" height="200px" width="160px">
+                    <h4>Men's Watche <br> $ 300</h4>
+                    <h4 class="rating">Like
+                    <br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    </h4>
+                    </div>
+                    <button class="product-btn">Add To Cart</button>
+                </div>
+                <hr style="display: none;">
+                <div class="col">
+                    <div>
+                    <img src="images/w2.png" alt="" height="200px" width="160px">
+                     <h4>Men's Watche <br> $ 300</h4>
+                    <h4 class="rating">Like
+                    <br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    </h4>
+                    </div>
+                    <button class="product-btn">Add To Cart</button>
+                </div>
+                <div class="col">
+                    <div>
+                    <img src="images/w3.png" alt="" height="200px" width="160px">
+                    <h4>Men's Watche <br> $ 300</h4>
+                      <h4 class="rating">Like
+                    <br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    </h4>
+                    </div>
+                    <button class="product-btn">Add To Cart</button>
+                </div>
+            </div>
+        </div>   
+        <br>
+        <!-- p-2 -->
+        <div class="products-2">
+              <h1>Feature Watches</h1>
+            <div class="row">
+                <div class="col">
+                    <div>
+                    <img src="images/w4.png" alt="" height="200px" width="160px">
+                    <h4>Men's Watche <br> $ 300</h4>
+                    <h4 class="rating">Like
+                    <br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    </h4>
+                    </div>
+                    <button class="product-btn">Add To Cart</button>
+                </div>
+                <div class="col">
+                    <div>
+                    <img src="images/w5.png" alt="" height="200px" width="160px">
+                     <h4>Men's Watche <br> $ 300</h4>
+                    <h4 class="rating">Like
+                    <br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    </h4>
+                    </div>
+                    <button class="product-btn">Add To Cart</button>
+                </div>
+                <div class="col">
+                    <div>
+                    <img src="images/w6.png" alt="" height="200px" width="160px">
+                    <h4>Men's Watche <br> $ 300</h4>
+                      <h4 class="rating">Like
+                    <br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    </h4>
+                    </div>
+                    <button class="product-btn">Add To Cart</button>
+                </div>
+            </div>
+        </div>   
+        <br>
+        <!-- p-3 -->
+        <div class="products-3">
+          <h1>New Arrivals</h1>
+            <div class="row">
+                <div class="col">
+                    <div>
+                    <img src="images/w7.png" alt="" height="200px" width="160px">
+                    <h4>Men's Watche <br> $ 300</h4>
+                    <h4 class="rating">Like
+                    <br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    </h4>
+                    </div>
+                    <button class="product-btn">Add To Cart</button>
+                </div>
+                <div class="col">
+                    <div>
+                    <img src="images/w8.png" alt="" height="200px" width="160px">
+                     <h4>Men's Watche <br> $ 300</h4>
+                    <h4 class="rating">Like
+                    <br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    </h4>
+                    </div>
+                    <button class="product-btn">Add To Cart</button>
+                </div>
+                <div class="col">
+                    <div>
+                    <img src="images/w9.png" alt="" height="200px" width="160px">
+                    <h4>Men's Watche <br> $ 300</h4>
+                      <h4 class="rating">Like
+                    <br>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    </h4>
+                    </div>
+                    <button class="product-btn">Add To Cart</button>
+                </div>
+            </div>
+        </div>   
+        <head>    
+     <!-- products-end -->
+
+     <!-- contact-start -->
+      
+        <div class="contact">
+            <div class="row">
+                <div class="col">
+                   <h1>CONTACT</h1>
+                   <form action="">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="number" placeholder="Phone Number" maxlength="10" required>
+                    <input type="email"placeholder="E-mail" required>
+                    <input class="Message" type="text" placeholder="Message" required>
+                    <button>SENT</button>
+                   </form>
+                </div>
+                <div class="col">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98317.35429826751!2d80.13465219431639!3d13.013889349348473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266ef8fed2239%3A0x27c8645a90f9d9cb!2sSBS%20Watch%20Square!5e1!3m2!1sen!2sin!4v1748241303570!5m2!1sen!2sin" 
+                     width="600" height="611" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+      <!-- contact-end -->
+
+      <!-- testimonal-start -->
+
+      <div class="testimonal">
+            <h1>Testimonal</h1>
+            <div>
+            <i class="fa-solid fa-quote-left"></i>
+            <h2 style="color: blueviolet;">Morojink</h2>
+            <h2 style="color: green;"> Customer</h2>
+            <br><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+               fugia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit.</p>
+            </div>
+            <img src="images/client.jpg" alt="" height="180px" width="180px">
+            </div>
+   
+        <footer>
+            <h1 style="color: white;">HANDTIME</h1>
+            <br>
+            <hr class="underline">
+        <div class="footerbar">
+            <div class="row">
+                 <div class="col" >
+                   <h2>About</h2>
+                <a href=""><i class="fa-solid fa-location-dot"></i>Address</a>
+                <a href=""><i class="fa-solid fa-mobile-screen-button"></i>+91 9123576865</a>
+                <a href=""><i class="fa-solid fa-envelope"></i>E-mail</a>
+                </div>
+                 <div class="col">
+                   <h2>Information</h2>
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque cum dolorum expedita beatae, ipsam architecto?</p>
+                </div>
+                 <div class="col" id="inst-col">
+                   <h2>Instagram</h2>
+                   <div>
+                  <img src="images/w1.png" alt="" height="50px" width="50px">
+                  <img src="images/w2.png" alt="" height="50px" width="50px">
+                  <img src="images/w3.png" alt="" height="50px" width="50px">
+                  <img src="images/w4.png" alt="" height="50px" width="50px">
+                  <img src="images/w5.png" alt="" height="50px" width="50px">
+                  <img src="images/w6.png" alt="" height="50px" width="50px">
+                  </div>
+                </div>
+                 <div class="col" id="news-col">
+                   <h2>Newsletter</h2>
+                    <input type="email" placeholder="Enter your e-mail">
+                    <button>SUBSCRIBES</button>
+                    <div>
+                    <i class="fa-brands fa-facebook"></i> 
+                     <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                     </div>
+                </div>
+            </div>
+        </div>
+            <hr>
+        <p class="copyrights">copyrights 2020 - Easy Tutorials</p>
+        </footer>
+       
+        <!-- fotter-end -->
+</body>
+</html>
